@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Vijay V. Patel Infrastructure Pvt. Ltd.</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Header same as Leadership page */
+    header nav {
+      display: flex;
+      gap: 15px;
+      padding: 15px 30px;
+
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Main container same style as Leadership page */
+    .slide-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #002366;
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .contact-card {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .contact-card h2 {
+      margin-bottom: 20px;
+      color: #002366;
+      text-align: center;
+    }
+
+    .contact-card p {
+      margin-bottom: 15px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .contact-card form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-card input,
+    .contact-card textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .contact-card button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-card button:hover {
+      background-color: #0056b3;
+    }
+    
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav img {
+      height: 80px; /* increase as needed */
+      width: auto;  /* keeps original aspect ratio */
+      margin-right: 20px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="logo.jpg" alt="V.V. Patel Infrastructure Logo" style="height:95px;">
+      </a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Our Services</a>
+      <a href="whyus.html">Why Us?</a>
+      <a href="leadership.html">Our Leadership Team</a>
+      <a href="journey.html">Our Journey</a>
+      <a href="clients.html">Our Clients</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="slide-container">
+    <h1>Contact Us</h1>
+    <div class="contact-grid">
+
+      <!-- Left Card: Company Info + Map -->
+      <div class="contact-card">
+        <h2>Our Office</h2>
+        <p><strong>Address:</strong><br>
+        349 Avadh Viceroy, 3rd Floor, Sarthana Jakat Naka, Varachha Road, Surat, Gujarat, India - 395006</p>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d929.7544421593683!2d72.90262595226406!3d21.231143979990655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be045f4b61ead47%3A0x8b235392ebd116f4!2sAvadh%20Viceroy!5e0!3m2!1sen!2sca!4v1759265511104!5m2!1sen!2sca" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p><strong>Phone:</strong> +91 261 3529369 | +91 91737 42465<br>
+        <strong>Email:</strong> info@vvpatelinfra.com</p>
+        <p><strong>Business Hours:</strong> Mon - Sat: 9:00 AM - 6:00 PM (IST)</p>
+      </div>
+
+      <!-- Right Card: Contact Form -->
+      <div class="contact-card">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+          <input type="text" name="first_name" placeholder="First Name *" required>
+          <input type="email" name="email" placeholder="Email *" required>
+          <input type="tel" name="phone" placeholder="Phone Number *" pattern="[0-9]{10}" required>
+          <input type="text" name="subject" placeholder="Subject / Reason for Contact *" required>
+          <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Vijay V. Patel Infrastructure Pvt. Ltd.</p>
+  </footer>
+</body>
+</html>
